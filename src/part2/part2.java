@@ -19,8 +19,9 @@ public class part2 {
 
 //TODO
 /*
- * This is preferred as it is straightforward and easy to read. At each step we know that we are multiplying and due to
- * the method being extremely simple and easy to read these qualities are transferred to the code.
+ * This is preferred as it is straightforward and easy to read. At each step we know that we are
+ * multiplying and due to the method being extremely simple and easy to read these qualities are
+ * transferred to the code.
  */
 public class Part2_inline_temp {
     public int funny(int a, int b) {

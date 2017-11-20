@@ -18,8 +18,9 @@ class A {
 
 
 /*
- * B helps indicate that g (gravity constant) is a constant and shouldn't be messed around with. By using "static final"
- * But, B can be more confusing as more rules are now applied to using g properly.
+ * B helps indicate that g (gravity constant) is a constant and shouldn't be messed around
+ * with by using "static final". But, B can be more confusing as more rules are now applied
+ * to using g properly.
  */
 class B {
 
