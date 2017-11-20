@@ -17,7 +17,6 @@ public class part2 {
     }
 }
 
-//TODO
 /*
  * This is preferred as it is straightforward and easy to read. At each step we know that we are
  * multiplying and due to the method being extremely simple and easy to read these qualities are
@@ -37,7 +36,6 @@ public class Part2_inline_temp {
     }
 }
 
-//TODO
 /*
  * This is not preferred as it is redundant for such a simple method. For a more advanced or lengthy method
  * this can be useful, but, for a small and simple function of multiplying two numbers this is overkill.
