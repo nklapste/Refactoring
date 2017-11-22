@@ -1,7 +1,7 @@
 // A
 public class A {
 
-    public intk(long i) {
+    public int k(long i) {
 
         return 10;
 
@@ -11,13 +11,13 @@ public class A {
 
 public class B extends A {
 
-    public intk(int i) {
+    public int k(int i) {
 
         return 20;
 
     }
 
-    public static voidmain(String[] args) {
+    public static void main(String[] args) {
 
         System.out.println(new A().k(2));
 
@@ -28,13 +28,13 @@ public class B extends A {
 // B
 public class A {
 
-    public intk(long i) {
+    public int k(long i) {
 
         return 10;
 
     }
 
-    public intk(int i) {
+    public int k(int i) {
 
         return 20;
 
@@ -44,7 +44,7 @@ public class A {
 
 public class B extends A {
 
-    public static voidmain(String[] args) {
+    public static void main(String[] args) {
 
     System.out.println(new A().k(2));
 

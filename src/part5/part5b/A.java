@@ -2,6 +2,7 @@ package part5.part5b;
 
 public class A {
 
+    // unused
     public int k(long i) {
 
         return 10;
