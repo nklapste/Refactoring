@@ -1,0 +1,60 @@
+// A
+public class A {
+
+    public intk(long i) {
+
+        return 10;
+
+    }
+
+}
+
+public class B extends A {
+
+    public intk(int i) {
+
+        return 20;
+
+    }
+
+    public static voidmain(String[] args) {
+
+        System.out.println(new A().k(2));
+
+    }
+
+}
+
+// B
+public class A {
+
+    public intk(long i) {
+
+        return 10;
+
+    }
+
+    public intk(int i) {
+
+        return 20;
+
+    }
+
+}
+
+public class B extends A {
+
+    public static voidmain(String[] args) {
+
+    System.out.println(new A().k(2));
+
+    }
+
+}
+
+The pull up refactoring method was used to convert from A to B
+
+Doing the pull up refactor on method "public int k(int i)" from A to B enables the "new A().k(2)" call to use
+overloading. This allows (for part B) "new A().k(2)" to choose the function with the closest type in regards to input
+parameters. Thus, since "new A().k(2)" is passed an int it will use the the "k" function with the int parameter instead
+of the long, thus, returning 20 instead of 10.
