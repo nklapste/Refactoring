@@ -1,5 +1,6 @@
 package part2;
 
+// original code
 public class part2 {
     public int funny(int a, int b) {
 
@@ -18,6 +19,8 @@ public class part2 {
 }
 
 /*
+ * Inline Temp Refactoring:
+ *
  * This is preferred as it is straightforward and easy to read. At each step we know that we are
  * multiplying and due to the method being extremely simple and easy to read these qualities are
  * transferred to the code.
@@ -37,6 +40,8 @@ public class Part2_inline_temp {
 }
 
 /*
+ * Extract Method Followed by Replace Temp with Query Refactoring:
+ *
  * This is not preferred as it is redundant for such a simple method. For a more advanced or lengthy method
  * this can be useful, but, for a small and simple function of multiplying two numbers this is overkill.
  *

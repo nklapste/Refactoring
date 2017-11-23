@@ -4,13 +4,14 @@ package part4;
 /*
  * Introduce Explaining Variable refactoring could be useful if the context of this code
  * indicates that "offset" could possibly need updates to the future. Eg: testing multiple
- * different embedded systems where offset could change from board to board (thus a identifying
- * 128 to the unique name of "offset" could help in updating code later). Giving a name to 128
+ * different embedded systems where offset could change from board to board. Thus a identifying
+ * 128 to the unique name of "offset" could help in updating code later. Giving a name to 128
  * as "offset" helps centralize this value, and gives a definite note of where its use is.
  * Eg: say we did have to change "offset" to 132 if inline temp refactoring was done instead
  * it would require extra effort to ensure all changes of 128 to 132 were proper (maybe at NOTE_1
  * it should remain 128). Thus, by using Introduce Explaining Variable refactoring we directly avoid
- * doing this extra effort as all uses of 128 as an "offset" are directly applied and stated.
+ * doing this extra effort as all uses of 128 as an "offset" are directly applied and stated. Allowing
+ * users to dicern offset useages of 128 to other constant useages of 128.
  *
  * Also if this code was to be expanded in the future it can be beneficial to have 128 labeled as "offset"
  * as it can be later used in new code segments easily without having to remember the exact value.
@@ -53,10 +54,10 @@ class A {
  * "offset" was needed (ever in any system), thus, making safe to permanently write-in 128.
  *
  * Additionally, by not stating that its an "offset" it leaves out (in this case useless)
- * information on the system which could help simplify the code as outside concepts are "ignored".
+ * information on the system which could help "simplify" the code as outside concepts are "ignored".
  *
  * Good for extremely small or rare cases where either project background knowledge makes 128
- * obvious of its use, or 128 is known to NEVER change.
+ * obvious of its use or 128 is known to NEVER change.
  *
  * Lacking knowledge of the actual use of 128 can make understanding the code easier as
  * developers don't get tangled in its actual background use, and simply accept 128 as the

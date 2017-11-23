@@ -58,3 +58,5 @@ Doing the pull up refactor on method "public int k(int i)" from A to B enables t
 overloading. This allows (for part B) "new A().k(2)" to choose the function with the closest type in regards to input
 parameters. Thus, since "new A().k(2)" is passed an int it will use the the "k" function with the int parameter instead
 of the long, thus, returning 20 instead of 10.
+
+This can be considered an error within refactoring. As pulling up the method results in new behaviour from Overloading.

@@ -49,4 +49,7 @@ class B {
  * create their own "catch" (possibly additional if statements in higher levels of code checking
  * for -1 return values). B throws an exception which can be caught cleanly and dealt appropriately
  * with built in methods of the language used (assuming the language used has basic error handling).
+ *
+ * Using A you'll have to reinvent error catching/handling, while with B you'll be using built-in
+ * methods that are both more recognizeable and stable.
  */
